@@ -1,0 +1,41 @@
+@startuml yonde
+
+' ノードやエンティティの丸い囲みを非表示にする設定
+hide circle
+
+' リレーションシップの線を直交にする設定
+skinparam linetype ortho
+
+' "ラベル名" as エンティティ名
+entity "products" as products {
+    id
+    --
+    name
+    price
+    image
+    description
+    created_at
+    updated_at
+}
+
+entity "seasons" as seasons {
+    id
+    --
+    name
+    created_at
+    updated_at
+}
+
+entity "product_season" as product_season {
+    id
+    --
+    product_id
+    season_id
+    created_at
+    updated_at
+}
+
+products ||--|{ product_season
+seasons ||--|{ product_season
+
+@enduml

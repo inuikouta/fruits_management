@@ -1,0 +1,129 @@
+/**
+ * ヘッダー
+ */
+.header {
+    height: 60px;
+    margin-bottom: 50px;
+}
+
+/**
+ * メインコンテンツ
+ */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.top__left {
+    width: 15%;
+}
+
+.top__right {
+    width: 80%;
+    text-align: right;
+}
+
+.top__heading {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.top__add-btn {
+    display: inline-block;
+    max-height: 100%;
+    margin: auto 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    background-color: #f4cf00;
+    box-shadow: 0 0 6px gray;
+}
+
+/* 商品リストセクション */
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.section__left {
+    width: 15%;
+}
+
+.section__right {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* 左寄せに変更 */
+    gap: 2%; /* カード間の余白を追加 */
+    margin-bottom: 30px;
+}
+
+.section__search-text {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-bottom: 30px;
+    padding: 3px 10px;
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+}
+
+.section__search-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    max-height: 100%;
+    margin-bottom: 60px;
+    border-radius: 3px;
+    color: black;
+    background-color: #ffd900;
+    box-shadow: 0 0 6px gray;
+}
+
+.section__subheading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.section__select {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    height: 40px;
+    width: 100%;
+}
+
+/* 商品カード */
+.product__item {
+    width: 32%;
+    box-shadow: 0 0 6px gray;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.product__image {
+    width: 100%;
+}
+
+.product__info {
+    display: flex;
+    font-size: 30px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
