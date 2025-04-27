@@ -32,9 +32,7 @@ Route::get('/products/{productId}', [ProductSeasonController::class, 'show'])->w
 Route::patch('/products/{productId}/update', [ProductSeasonController::class, 'update'])->where('productId', '[0-9]+')->name('product.update');
 
 // 削除
-Route::delete('/products/{productId}/delete', function () {
-    return view('welcome');
-})->where('productId', '[0-9]+');
+Route::delete('/products/{productId}/delete', [ProductSeasonController::class, 'destroy'])->where('productId', '[0-9]+')->name('product.destroy');
 
 // 登録ページ
 Route::get('/products/register', function () {
@@ -42,9 +40,3 @@ Route::get('/products/register', function () {
 });
 
 Route::post('/products/register', [ProductSeasonController::class, 'create'])->name('product.register');
-
-/**
- * テスト用
- */
-
-Route::get('/test', [test::class, 'test']);

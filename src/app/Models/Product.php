@@ -121,4 +121,24 @@ class Product extends Model
         // 商品を更新
         $product->save();
     }
+
+    /**
+     * 商品を削除する
+     *
+     * @param int $id
+     * @return void
+     */
+    public static function deleteProduct($id)
+    {
+        // 商品をIDで取得
+        $product = Product::findOrFail($id);
+
+        // 古い画像の削除
+        if ($product->image && Storage::disk('public')->exists($product->image)) {
+            Storage::disk('public')->delete($product->image);
+        }
+
+        // 商品を削除
+        $product->delete();
+    }
 }

@@ -121,6 +121,8 @@ class ProductSeasonController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Product::deleteProduct($id);
+
+        return redirect()->route('product.index')->with('success', '商品を削除しました');
     }
 }
