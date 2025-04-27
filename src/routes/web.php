@@ -34,9 +34,13 @@ Route::patch('/products/{productId}/update', [ProductSeasonController::class, 'u
 // 削除
 Route::delete('/products/{productId}/delete', [ProductSeasonController::class, 'destroy'])->where('productId', '[0-9]+')->name('product.destroy');
 
-// 登録ページ
+/**
+ * 登録ページ
+ */
+// 表示
 Route::get('/products/register', function () {
     return view('productRegister');
 });
 
+// 登録
 Route::post('/products/register', [ProductSeasonController::class, 'create'])->name('product.register');
