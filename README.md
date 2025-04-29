@@ -24,8 +24,8 @@
 ![Image](https://github.com/user-attachments/assets/15d29d16-5fb4-4717-ade7-a534f9252f03)
 
 ## URL
-- 開発環境：
-- phpmyadmin：
+- 開発環境：http://localhost/products
+- phpmyadmin：http://localhost:8080
 
 > **注意:**  
 > ymlファイルの記述が、LMSの教材とは少し異なっています。  
