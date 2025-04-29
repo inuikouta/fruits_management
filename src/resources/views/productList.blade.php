@@ -60,9 +60,7 @@
         @endisset
 
     </div>
-@php
-dd("test");
-@endphp
+
     <div class="section__right product-list__sort">
         @foreach($products as $product)
         <a href="{{ route('product.show', ['productId' => $product->id])}}" class="product__item">
