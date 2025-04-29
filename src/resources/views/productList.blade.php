@@ -1,30 +1,5 @@
 @extends('layouts.app')
-<style>
-    .filter-tag {
-        display: flex;
-        align-items: center;
-        width: 140px;
-        border: 1px solid #caaf00;
-        border-radius: 20px;
-        padding: 8px 10px;
-        font-size: 14px;
-    }
 
-    .close-btn {
-        background: none;
-        border: none;
-        border: 1px solid #caaf00;
-        border-radius: 50%;
-        margin-left: 10px;
-        color: #caaf00;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    .close-btn:hover {
-        color: red;
-    }
-</style>
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/productList.css') }}">
 @endsection
@@ -53,10 +28,10 @@
         </form>
 
         @isset($price_sort)
-            <form method="get" action="/products" class="filter-tag">
-                {{ $price_sort }}
-                <button class="close-btn">×</button>
-            </form>
+        <form method="get" action="/products" class="filter-tag">
+            {{ $price_sort }}
+            <button class="close-btn">×</button>
+        </form>
         @endisset
 
     </div>

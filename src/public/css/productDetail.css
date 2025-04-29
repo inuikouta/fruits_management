@@ -1,7 +1,10 @@
+/**
+ * 詳細画面
+ */
 .container {
     padding-top: 100px;
-    margin: 0 auto; /* 中央配置 */
-    width: 50%; /* 適切な幅に調整（必要に応じて変更可能） */
+    margin: 0 auto;
+    width: 50%;
 }
 
 .form__group {
@@ -28,31 +31,31 @@
 }
 
 .form__item {
-    margin-bottom: 30px; /* 各項目の間隔を設定 */
+    margin-bottom: 30px;
 }
 
 .form__label {
-    display: inline-block; /* ラベルをインラインブロックに設定 */
-    margin-bottom: 20px; /* ラベルと入力フィールドの間隔を設定 */
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .form__input-text {
-    width: 100%; /* 入力フィールドの幅を100%に設定 */
-    height: 40px; /* 入力フィールドの高さを40pxに設定 */
-    padding: 10px; /* 内側の余白を追加 */
-    border: 1px solid #ccc; /* 枠線を追加 */
-    border-radius: 4px; /* 角を丸くする */
-    box-sizing: border-box; /* パディングとボーダーを含めたサイズ計算 */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .form__textarea {
-    display: block; /* ブロック要素に設定 */
-    width: 100%; /* テキストエリアの幅を100%に設定 */
-    padding: 10px; /* 内側の余白を追加 */
-    border: 1px solid #ccc; /* 枠線を追加 */
-    border-radius: 4px; /* 角を丸くする */
-    resize: none; /* サイズ変更を無効にする */
-    box-sizing: border-box; /* パディングとボーダーを含めたサイズ計算 */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    box-sizing: border-box;
 }
 
 .checkbox {
@@ -63,54 +66,54 @@
 .checkbox__item {
     display: flex;
     align-items: center;
-    margin-right: 40px; /* チェックボックスの間隔を設定 */
+    margin-right: 40px;
 }
 
 .checkbox__label {
-    margin-left: 10px; /* チェックボックスとラベルの間隔を設定 */
-    font-size: 16px; /* 文字サイズ */
-    line-height: 16px; /* 文字サイズと同じ値を設定 */
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .checkbox__input {
-    appearance: none; /* デフォルトのスタイルをリセット */
-    -webkit-appearance: none; /* Safari用 */
-    -moz-appearance: none; /* Firefox用 */
-    width: 25px; /* チェックボックスの幅 */
-    height: 25px; /* チェックボックスの高さ */
-    border: 1px solid #707070; /* 枠線の色と太さ */
-    border-radius: 50%; /* 丸くする */
-    background-color: #fff; /* 背景色を設定 */
-    display: inline-block; /* インラインブロックに設定 */
-    cursor: pointer; /* カーソルをポインターに変更 */
-    position: relative; /* 擬似要素の基準位置を設定 */
-    transition: background-color 0.2s, border-color 0.2s; /* スムーズなアニメーション */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
 .checkbox__input:checked {
-    background-color: #232323; /* チェックされたときの背景色 */
+    background-color: #232323;
 }
 
 .checkbox__input:checked::before {
-    content: ''; /* 擬似要素を表示 */
+    content: '';
     position: absolute;
-    top: 50%; /* チェックマークを中央に配置 */
-    left: 50%; /* チェックマークを中央に配置 */
-    transform: translate(-50%, -60%) rotate(45deg); /* 中央揃えと回転 */
-    width: 6px; /* チェックマークの幅 */
-    height: 12px; /* チェックマークの高さ */
-    border: solid #ffffff; /* チェックマークの色 */
-    border-width: 0 2px 2px 0; /* チェックマークの形状を作成 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
 }
 
 .form__error {
-    color: #ff0000; /* エラーメッセージの色を赤に設定 */
+    color: #ff0000;
 }
 
 .form__button {
     display: flex;
     justify-content: center;
-    gap: 50px; /* ボタン間の余白を設定 */
+    gap: 50px;
 }
 
 .form__button--back {
@@ -124,7 +127,7 @@
     color: black;
     background-color: #dcdcdc;
     box-shadow: 0 0 6px gray;
-    border: none; /* ボーダーを削除 */
+    border: none;
     cursor: pointer;
 }
 
@@ -139,7 +142,7 @@
     color: black;
     background-color: #f4cf00;
     box-shadow: 0 0 6px gray;
-    border: none; /* ボーダーを削除 */
+    border: none;
     cursor: pointer;
 }
 
@@ -149,9 +152,9 @@
 
 .form__button--delete {
     position: absolute;
-    border: none; /* ボーダーを削除 */
-    background-color: transparent; /* 背景色を透明に設定 */
+    border: none;
+    background-color: transparent;
     left: 97%;
     bottom: 10px;
-    cursor: pointer; /* カーソルをポインターに変更 */
+    cursor: pointer;
 }

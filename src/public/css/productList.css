@@ -52,8 +52,8 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* 左寄せに変更 */
-    gap: 2%; /* カード間の余白を追加 */
+    justify-content: flex-start;
+    gap: 2%;
     margin-bottom: 30px;
 }
 
@@ -99,6 +99,31 @@
     border-radius: 3px;
     height: 40px;
     width: 100%;
+}
+
+.filter-tag {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    border: 1px solid #caaf00;
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    border: 1px solid #caaf00;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: #caaf00;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
 }
 
 /* 商品カード */

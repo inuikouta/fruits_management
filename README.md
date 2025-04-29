@@ -29,5 +29,7 @@
 
 > **注意:**  
 > ymlファイルの記述が、LMSの教材とは少し異なっています。  
-> - platform: linux/amd64  
-> - phpmyadmin: arm64v8/phpmyadmin
+> ### mysql
+> - platform: linux/amd64
+> ### phpmyadmin
+> - image: arm64v8/phpmyadmin
